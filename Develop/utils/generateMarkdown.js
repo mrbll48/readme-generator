@@ -108,7 +108,9 @@ ${tests}
 
 ## Questions
 ${furtherQuestions}
+
 ${github}
+
 ${email}`;
 
 module.exports = generateReadMe;
