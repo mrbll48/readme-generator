@@ -1,7 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+// links the generate markdown file
 const generateReadMe = require("./utils/generateMarkdown");
 
+// array of questions that will be asked to the user once the application is run
 const questions = [
   {
     type: "input",
@@ -71,6 +73,7 @@ const questions = [
   },
 ];
 
+// runs inquirer and generates the readme after the questions are answered
 inquirer.prompt(questions).then((answers) => {
   const readMeContent = generateReadMe(answers);
 

@@ -1,3 +1,4 @@
+// renders a badge based on which license is chosen
 function renderLicenseBadge(license) {
   switch (license) {
     case "Apache License 2.0":
@@ -57,10 +58,12 @@ function renderLicenseBadge(license) {
   }
 }
 
+// makes the badges a clickable link to choosealicense.com
 function renderLicenseLink(license) {
   return `[${renderLicenseBadge(license)}](https://choosealicense.com)`;
 }
 
+// structure of the readme that gets generated.
 const generateReadMe = ({
   projTitle,
   description,
